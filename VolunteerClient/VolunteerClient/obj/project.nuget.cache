@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/6vp++TGOg0=",
+  "dgSpecHash": "LiBaBlkdjEg=",
   "success": true,
   "projectFilePath": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\VolunteerClient.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\danil\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.8\\microsoft.extensions.dependencyinjection.10.0.8.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.8\\microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

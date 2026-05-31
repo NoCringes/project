@@ -1,0 +1,96 @@
+﻿<Window x:Class="VolunteerClient.Views.EditUserDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="✏️ Редактирование пользователя" 
+        Height="500" 
+        Width="450"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="✏️ Редактирование пользователя" 
+                   FontSize="22" 
+                   FontWeight="Bold" 
+                   Foreground="#2C3E50"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,20"/>
+
+        <!-- Имя -->
+        <TextBlock Grid.Row="1" Text="Имя" FontWeight="SemiBold" Margin="0,5" Foreground="#555"/>
+        <TextBox x:Name="FirstNameBox" 
+                 Grid.Row="2" 
+                 Margin="0,5" 
+                 Padding="10" 
+                 FontSize="14"
+                 BorderBrush="#BDC3C7"
+                 BorderThickness="1"/>
+
+        <!-- Фамилия -->
+        <TextBlock Grid.Row="3" Text="Фамилия" FontWeight="SemiBold" Margin="0,10,0,5" Foreground="#555"/>
+        <TextBox x:Name="LastNameBox" 
+                 Grid.Row="4" 
+                 Margin="0,5" 
+                 Padding="10" 
+                 FontSize="14"
+                 BorderBrush="#BDC3C7"
+                 BorderThickness="1"/>
+
+        <!-- Email -->
+        <TextBlock Grid.Row="5" Text="Email" FontWeight="SemiBold" Margin="0,10,0,5" Foreground="#555"/>
+        <TextBox x:Name="EmailBox" 
+                 Grid.Row="6" 
+                 Margin="0,5" 
+                 Padding="10" 
+                 FontSize="14"
+                 BorderBrush="#BDC3C7"
+                 BorderThickness="1"/>
+
+        <!-- Телефон -->
+        <TextBlock Grid.Row="7" Text="Телефон" FontWeight="SemiBold" Margin="0,10,0,5" Foreground="#555"/>
+        <TextBox x:Name="PhoneBox" 
+                 Grid.Row="8" 
+                 Margin="0,5,0,42" 
+                 Padding="10" 
+                 FontSize="14"
+                 BorderBrush="#BDC3C7"
+                 BorderThickness="1"/>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,56,0,-31">
+            <Button x:Name="SaveButton" 
+                    Content="💾 Сохранить" 
+                    Width="120"
+                    Margin="5" 
+                    Padding="10" 
+                    Background="#27AE60" 
+                    Foreground="White"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    BorderThickness="0"
+                    Cursor="Hand"/>
+            <Button x:Name="CancelButton" 
+                    Content="❌ Отмена" 
+                    Width="120"
+                    Margin="5" 
+                    Padding="10" 
+                    Background="#95A5A6" 
+                    Foreground="White"
+                    FontSize="14"
+                    BorderThickness="0"
+                    Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Window>
