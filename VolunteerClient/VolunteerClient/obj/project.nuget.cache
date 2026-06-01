@@ -1,12 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "LiBaBlkdjEg=",
+  "dgSpecHash": "7BjqW+xbePE=",
   "success": true,
   "projectFilePath": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\VolunteerClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danil\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512",
     "C:\\Users\\danil\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.8\\microsoft.extensions.dependencyinjection.10.0.8.nupkg.sha512",
-    "C:\\Users\\danil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.8\\microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512"
+    "C:\\Users\\danil\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.8\\microsoft.extensions.dependencyinjection.abstractions.10.0.8.nupkg.sha512",
+    "C:\\Users\\danil\\.nuget\\packages\\system.text.json\\10.0.8\\system.text.json.10.0.8.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Text.Json не будет урезано. Рассмотрите возможность удаления этого пакета из зависимостей, так как он, вероятно, не требуется.",
+      "projectPath": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\VolunteerClient.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\VolunteerClient.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net10.0-windows7.0"
+      ]
+    }
+  ]
 }
