@@ -230,11 +230,10 @@ public class EventsController : ControllerBase
         return Ok(slots);
     }
 
-    // GET: api/events/{id}/registrations - получить все записи на мероприятие (для координатора)
+    // GET: api/events/{id}/registrations - получить все слоты с волонтёрами
     [HttpGet("{id}/registrations")]
     public async Task<IActionResult> GetEventRegistrations(int id)
     {
-        // Получаем userId из токена
         var userIdClaim = User.FindFirst("userId")?.Value;
         if (string.IsNullOrEmpty(userIdClaim))
             return Unauthorized(new { message = "Не авторизован" });
@@ -245,42 +244,52 @@ public class EventsController : ControllerBase
         if (user == null)
             return Unauthorized(new { message = "Пользователь не найден" });
 
-        // Проверяем, существует ли мероприятие
         var eventEntity = await _context.Events.FindAsync(id);
         if (eventEntity == null)
             return NotFound(new { message = "Мероприятие не найдено" });
 
-        // Проверка прав: координатор может смотреть только свои мероприятия, админ - любые
         if (user.Role != "admin" && (user.Role != "coordinator" || eventEntity.CreatedBy != userId))
             return StatusCode(403, new { message = "Нет прав на просмотр записей этого мероприятия" });
 
-        var registrations = await _context.SlotVolunteers
-            .Where(sv => _context.EventSlots.Any(es => es.SlotId == sv.SlotId && es.EventId == id))
+        // Получаем все слоты мероприятия
+        var slots = await _context.EventSlots
+            .Where(s => s.EventId == id)
             .ToListAsync();
 
         var result = new List<object>();
 
-        foreach (var reg in registrations)
+        foreach (var slot in slots)
         {
-            var slot = await _context.EventSlots.FindAsync(reg.SlotId);
-            var volunteer = await _context.Users.FindAsync(reg.UserId);
+            // Получаем волонтёров, записанных на этот слот
+            var volunteers = await _context.SlotVolunteers
+                .Where(sv => sv.SlotId == slot.SlotId)
+                .Select(sv => new
+                {
+                    sv.RecordId,
+                    sv.UserId,
+                    sv.RegisteredAt,
+                    sv.Status,
+                    sv.AttendedAt,
+                    VolunteerName = _context.Users.Where(u => u.UserId == sv.UserId).Select(u => $"{u.FirstName} {u.LastName}").FirstOrDefault() ?? "Неизвестно",
+                    VolunteerEmail = _context.Users.Where(u => u.UserId == sv.UserId).Select(u => u.Email).FirstOrDefault() ?? "",
+                    VolunteerPhone = _context.Users.Where(u => u.UserId == sv.UserId).Select(u => u.Phone).FirstOrDefault() ?? ""
+                })
+                .ToListAsync();
 
             result.Add(new
             {
-                reg.RecordId,
-                reg.UserId,
-                VolunteerName = volunteer != null ? $"{volunteer.FirstName} {volunteer.LastName}" : "",
-                VolunteerEmail = volunteer?.Email,
-                reg.SlotId,
-                SlotTitle = slot?.Title,
-                reg.RegisteredAt,
-                reg.Status,
-                reg.AttendedAt
+                slot.SlotId,
+                slot.Title,
+                slot.Description,
+                slot.SlotsAvailable,
+                CurrentRegistrations = volunteers.Count(v => v.Status == "registered"),
+                Volunteers = volunteers
             });
         }
 
         return Ok(result);
     }
+
     // PUT: api/events/{id} - обновить мероприятие
     [HttpPut("{id}")]
     public async Task<IActionResult> UpdateEvent(int id, [FromBody] UpdateEventRequest request)

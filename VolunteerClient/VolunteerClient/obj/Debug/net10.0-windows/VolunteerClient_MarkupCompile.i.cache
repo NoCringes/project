@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 D:\code\lab_piris\VolunteerClient\VolunteerClient\App.xaml
 11751553690
 
-38-463898838
+39-1217667069
 209-925000028
 MainWindow.xaml;Views\AdminDashboardView.xaml;Views\CoordinatorDashboardView.xaml;Views\CreateEventView.xaml;Views\EditEventView.xaml;Views\EditUserDialog.xaml;Views\EventDetailsView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\VolunteerDashboardView.xaml;Views\VolunteersListView.xaml;
 

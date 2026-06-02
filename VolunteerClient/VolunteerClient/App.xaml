@@ -11,5 +11,6 @@
         <helpers:IntToVisibilityConverter x:Key="IntToVisibility"/>
         <helpers:BoolToCollapsedConverter x:Key="BoolToCollapsed"/>
         <helpers:BoolToVisibleConverter x:Key="BoolToVisible"/>
+        <helpers:EmptyListToVisibleConverter x:Key="EmptyListToVisible"/>
     </Application.Resources>
 </Application>

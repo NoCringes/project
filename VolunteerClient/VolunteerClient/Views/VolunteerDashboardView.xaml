@@ -86,7 +86,7 @@
                                FontSize="18" FontWeight="Bold" 
                                Padding="10" Background="#2ECC71" Foreground="White"/>
 
-                    <ListBox ItemsSource="{Binding MyApplications}" Margin="10" Height="400">
+                    <ListBox ItemsSource="{Binding MyApplications}" Margin="10" Height="454">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <Border BorderBrush="#BDC3C7" BorderThickness="0,0,0,1" Padding="10" Cursor="Hand">

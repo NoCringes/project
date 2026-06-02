@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\code\\lab_piris\\VolunteerServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|d:\\code\\lab_piris\\volunteerserver\\volunteerserver\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|solutionrelative:volunteerserver\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|d:\\code\\lab_piris\\volunteerserver\\volunteerserver\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|solutionrelative:volunteerserver\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|d:\\code\\lab_piris\\volunteerserver\\volunteerserver\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|solutionrelative:volunteerserver\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|d:\\code\\lab_piris\\volunteerserver\\volunteerserver\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|solutionrelative:volunteerserver\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|d:\\code\\lab_piris\\volunteerserver\\volunteerserver\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|solutionrelative:volunteerserver\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7774A2FE-1FD5-4FD9-79CE-DC5CCFF8B7E8}|VolunteerServer\\VolunteerServer.csproj|d:\\code\\lab_piris\\volunteerserver\\volunteerserver\\controllers\\applicationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,19 +63,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "VolunteerServer\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "VolunteerServer\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:36:32.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Event.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "VolunteerServer\\Models\\Event.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Models\\Event.cs",
+              "RelativeToolTip": "VolunteerServer\\Models\\Event.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:35:40.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Models\\User.cs",
+              "RelativeDocumentMoniker": "VolunteerServer\\Models\\User.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Models\\User.cs",
+              "RelativeToolTip": "VolunteerServer\\Models\\User.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:34:48.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "VolunteerServer\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "VolunteerServer\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T15:34:42.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "EventsController.cs",
               "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Controllers\\EventsController.cs",
               "RelativeDocumentMoniker": "VolunteerServer\\Controllers\\EventsController.cs",
               "ToolTip": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Controllers\\EventsController.cs",
               "RelativeToolTip": "VolunteerServer\\Controllers\\EventsController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwEAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAPAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-02T01:03:09.196Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ApplicationsController.cs",
               "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerServer\\VolunteerServer\\Controllers\\ApplicationsController.cs",
               "RelativeDocumentMoniker": "VolunteerServer\\Controllers\\ApplicationsController.cs",
@@ -67,8 +135,7 @@
               "RelativeToolTip": "VolunteerServer\\Controllers\\ApplicationsController.cs",
               "ViewState": "AgIAAJsAAAAAAAAAAAAAwLIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T23:52:13.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T23:52:13.9Z"
             }
           ]
         }

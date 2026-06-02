@@ -152,11 +152,11 @@ public class ApiClient
         var response = await _httpClient.PostAsync($"/api/Applications/{recordId}/confirm", null);
         response.EnsureSuccessStatusCode();
     }
-    public async Task<List<SlotVolunteerDto>> GetEventRegistrationsAsync(int eventId)
+    public async Task<List<SlotWithVolunteersDto>> GetEventRegistrationsAsync(int eventId)
     {
         var response = await _httpClient.GetAsync($"/api/Events/{eventId}/registrations");
         response.EnsureSuccessStatusCode();
-        var result = await response.Content.ReadFromJsonAsync<List<SlotVolunteerDto>>();
-        return result ?? new List<SlotVolunteerDto>();
+        var result = await response.Content.ReadFromJsonAsync<List<SlotWithVolunteersDto>>();
+        return result ?? new List<SlotWithVolunteersDto>();
     }
 }

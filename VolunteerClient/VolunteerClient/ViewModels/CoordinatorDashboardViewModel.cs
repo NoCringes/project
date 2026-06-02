@@ -124,7 +124,6 @@ public class CoordinatorDashboardViewModel : BaseViewModel
         if (eventItem is null) return;
 
         VolunteersListViewModel.CurrentEventId = eventItem.EventId;
-        VolunteersListViewModel.CurrentEventTitle = eventItem.Title;
         _navigation.NavigateTo<VolunteersListViewModel>();
     }
 

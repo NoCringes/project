@@ -12,9 +12,8 @@ public class VolunteersListViewModel : BaseViewModel
     private readonly NavigationService _navigation;
 
     public static int CurrentEventId { get; set; }
-    public static string CurrentEventTitle { get; set; } = string.Empty;
 
-    private ObservableCollection<SlotVolunteerDto> _volunteers = new();
+    private ObservableCollection<SlotWithVolunteersDto> _slots = new();
     private string _eventTitle = string.Empty;
     private string _eventLocation = string.Empty;
     private DateTime _eventStartDateTime;
@@ -32,10 +31,10 @@ public class VolunteersListViewModel : BaseViewModel
         Task.Run(async () => await LoadDataAsync());
     }
 
-    public ObservableCollection<SlotVolunteerDto> Volunteers
+    public ObservableCollection<SlotWithVolunteersDto> Slots
     {
-        get => _volunteers;
-        set => SetProperty(ref _volunteers, value);
+        get => _slots;
+        set => SetProperty(ref _slots, value);
     }
 
     public string EventTitle
@@ -67,8 +66,8 @@ public class VolunteersListViewModel : BaseViewModel
 
         try
         {
-            var registrations = await _apiClient.GetEventRegistrationsAsync(CurrentEventId);
-            Volunteers = new ObservableCollection<SlotVolunteerDto>(registrations);
+            var slots = await _apiClient.GetEventRegistrationsAsync(CurrentEventId);
+            Slots = new ObservableCollection<SlotWithVolunteersDto>(slots);
 
             var eventItem = await _apiClient.GetEventAsync(CurrentEventId);
             EventTitle = eventItem.Title;
@@ -117,6 +116,6 @@ public class VolunteersListViewModel : BaseViewModel
     private void Back()
     {
         CurrentEventId = 0;
-        _navigation.GoBack(); 
+        _navigation.GoBack();
     }
 }

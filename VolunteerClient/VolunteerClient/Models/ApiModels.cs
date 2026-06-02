@@ -107,3 +107,12 @@ public class UserDto
     public string Phone { get; set; } = string.Empty;
     public string Role { get; set; } = string.Empty;
 }
+public class SlotWithVolunteersDto
+{
+    public int SlotId { get; set; }
+    public string Title { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
+    public int SlotsAvailable { get; set; }
+    public int CurrentRegistrations { get; set; }
+    public List<SlotVolunteerDto> Volunteers { get; set; } = new();
+}
