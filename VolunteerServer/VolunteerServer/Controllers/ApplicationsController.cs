@@ -50,6 +50,7 @@ public class ApplicationsController : ControllerBase
                 reg.RegisteredAt,
                 reg.Status,
                 reg.AttendedAt,
+                EventId = eventEntity.EventId,
                 EventTitle = eventEntity.Title,
                 SlotTitle = slot.Title,
                 EventLocation = eventEntity.Location,
@@ -151,6 +152,48 @@ public class ApplicationsController : ControllerBase
         await _context.SaveChangesAsync();
 
         return Ok(new { message = "Участие отмечено!" });
+    }
+
+    // POST: api/applications/{id}/confirm - подтвердить участие (для координатора)
+    [HttpPost("{id}/confirm")]
+    public async Task<IActionResult> ConfirmAttendance(int id)
+    {
+        // Получаем userId из токена
+        var userIdClaim = User.FindFirst("userId")?.Value;
+        if (string.IsNullOrEmpty(userIdClaim))
+            return Unauthorized(new { message = "Не авторизован" });
+
+        var userId = int.Parse(userIdClaim);
+        var user = await _context.Users.FindAsync(userId);
+
+        var registration = await _context.SlotVolunteers.FindAsync(id);
+        if (registration == null)
+            return NotFound(new { message = "Запись не найдена" });
+
+        // Проверяем, что пользователь - координатор или админ
+        if (user.Role != "coordinator" && user.Role != "admin")
+            return Forbid();
+
+        // Проверяем, что координатор имеет доступ к этому мероприятию
+        var slot = await _context.EventSlots.FindAsync(registration.SlotId);
+        if (slot == null)
+            return NotFound(new { message = "Слот не найден" });
+
+        var eventEntity = await _context.Events.FindAsync(slot.EventId);
+        if (eventEntity == null)
+            return NotFound(new { message = "Мероприятие не найдено" });
+
+        if (user.Role != "admin" && eventEntity.CreatedBy != userId)
+            return Forbid();
+
+        if (registration.Status != "registered")
+            return BadRequest(new { message = "Можно подтвердить только активную запись" });
+
+        registration.Status = "attended";
+        registration.AttendedAt = DateTime.UtcNow;
+        await _context.SaveChangesAsync();
+
+        return Ok(new { message = "Участие подтверждено!" });
     }
 }
 

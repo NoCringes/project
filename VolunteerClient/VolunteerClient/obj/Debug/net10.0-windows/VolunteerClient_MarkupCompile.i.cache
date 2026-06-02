@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\code\lab_piris\VolunteerClient\VolunteerClient\App.xaml
-7-982488381
+11751553690
 
-141448494742
+38-463898838
 209-925000028
-MainWindow.xaml;Views\AdminDashboardView.xaml;Views\CoordinatorDashboardView.xaml;Views\EditUserDialog.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\VolunteerDashboardView.xaml;
+MainWindow.xaml;Views\AdminDashboardView.xaml;Views\CoordinatorDashboardView.xaml;Views\CreateEventView.xaml;Views\EditEventView.xaml;Views\EditUserDialog.xaml;Views\EventDetailsView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;Views\VolunteerDashboardView.xaml;Views\VolunteersListView.xaml;
 
 False
 

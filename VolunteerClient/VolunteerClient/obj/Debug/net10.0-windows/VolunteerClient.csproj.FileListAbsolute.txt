@@ -36,3 +36,13 @@ D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\View
 D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\AdminDashboardView.g.cs
 D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\EditUserDialog.baml
 D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\EditUserDialog.g.cs
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\App.baml
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\CreateEventView.baml
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\CreateEventView.g.cs
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\EventDetailsView.baml
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\EventDetailsView.g.cs
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\EditEventView.baml
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\EditEventView.g.cs
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\VolunteersListView.baml
+D:\code\lab_piris\VolunteerClient\VolunteerClient\obj\Debug\net10.0-windows\Views\VolunteersListView.g.cs

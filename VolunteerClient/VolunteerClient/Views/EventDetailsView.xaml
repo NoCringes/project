@@ -1,0 +1,157 @@
+﻿<UserControl x:Class="VolunteerClient.Views.EventDetailsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="White">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Grid.Row="0" Text="{Binding Title}" FontSize="24" FontWeight="Bold" Foreground="#2C3E50" TextWrapping="Wrap"/>
+
+        <!-- Статус -->
+        <TextBlock Grid.Row="1" Margin="0,10,0,0">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Text" Value="Статус: {Binding Status}"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Status}" Value="active">
+                            <Setter Property="Text" Value="✅ Активно"/>
+                            <Setter Property="Foreground" Value="#27AE60"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="completed">
+                            <Setter Property="Text" Value="📌 Завершено"/>
+                            <Setter Property="Foreground" Value="#3498DB"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding Status}" Value="cancelled">
+                            <Setter Property="Text" Value="❌ Отменено"/>
+                            <Setter Property="Foreground" Value="#E74C3C"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+
+        <!-- Информация о мероприятии -->
+        <Border Grid.Row="2" Background="#ECF0F1" CornerRadius="8" Padding="10" Margin="0,15,0,0">
+            <StackPanel>
+                <TextBlock FontWeight="Bold" FontSize="14" Text="📋 Описание"/>
+                <TextBlock Text="{Binding Description}" TextWrapping="Wrap" Margin="0,5,0,0"/>
+
+                <TextBlock FontWeight="Bold" FontSize="14" Margin="0,10,0,0" Text="📍 Место"/>
+                <TextBlock Text="{Binding Location}" Margin="0,5,0,0"/>
+
+                <TextBlock FontWeight="Bold" FontSize="14" Margin="0,10,0,0" Text="📅 Дата и время"/>
+                <TextBlock Margin="0,5,0,0">
+                    <Run Text="{Binding StartDateTime, StringFormat='Начало: dd.MM.yyyy HH:mm'}"/>
+                    <LineBreak/>
+                    <Run Text="{Binding EndDateTime, StringFormat='Окончание: dd.MM.yyyy HH:mm'}"/>
+                </TextBlock>
+
+                <TextBlock FontWeight="Bold" FontSize="14" Margin="0,10,0,0" Text="👥 Волонтёры"/>
+                <TextBlock Text="{Binding MaxVolunteers, StringFormat='Максимальное количество: {0}'}" Margin="0,5,0,0"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Слоты -->
+        <Border Grid.Row="3" CornerRadius="8" Background="#ECF0F1" Padding="10" Margin="0,15,0,0">
+            <StackPanel>
+                <TextBlock Text="📌 Слоты (роли)" FontWeight="Bold" FontSize="14" Margin="0,0,0,10"/>
+
+                <ItemsControl ItemsSource="{Binding Slots}">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="White" CornerRadius="5" Padding="10" Margin="0,5">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Title}" FontWeight="SemiBold" FontSize="14"/>
+                                        <TextBlock Text="{Binding Description}" Foreground="Gray" FontSize="12" TextWrapping="Wrap"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                                            <TextBlock Text="Свободно мест: " Foreground="Gray" FontSize="11"/>
+                                            <TextBlock Text="{Binding FreeSlots, Mode=OneWay}" Foreground="Gray" FontSize="11"/>
+                                            <TextBlock Text=" / " Foreground="Gray" FontSize="11"/>
+                                            <TextBlock Text="{Binding SlotsAvailable}" Foreground="Gray" FontSize="11"/>
+                                        </StackPanel>
+
+                                        <!-- Показываем, если записан именно на этот слот -->
+                                        <TextBlock Text="✅ Вы уже записаны" 
+                                                   Foreground="#27AE60" 
+                                                   FontSize="11"
+                                                   Margin="0,3,0,0"
+                                                   Visibility="{Binding IsUserRegistered, Converter={StaticResource BoolToVisible}}"/>
+                                    </StackPanel>
+
+                                    <!-- Кнопка "Записаться" - скрывается, если записан на ЛЮБОЙ слот этого мероприятия -->
+                                    <Button Grid.Column="1" 
+                                            Content="Записаться"
+                                            Command="{Binding DataContext.ApplyToSlotCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                            CommandParameter="{Binding SlotId}"
+                                            Background="#27AE60"
+                                            Foreground="White"
+                                            BorderThickness="0"
+                                            Cursor="Hand"
+                                            Padding="15,8"
+                                            IsEnabled="{Binding FreeSlots, Converter={StaticResource IntToBool}}"
+                                            Visibility="{Binding DataContext.IsAlreadyRegisteredForAnySlot, RelativeSource={RelativeSource AncestorType=UserControl}, Converter={StaticResource BoolToCollapsed}}"/>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </Border>
+
+        <!-- Сообщение об ошибке -->
+        <TextBlock Grid.Row="4" 
+                   Text="{Binding ErrorMessage}" 
+                   Foreground="#E74C3C" 
+                   Margin="0,10" 
+                   TextWrapping="Wrap"
+                   Visibility="{Binding ErrorMessage, Converter={StaticResource StringToVisibility}}"/>
+
+        <!-- Сообщение о том, что уже записан на другой слот -->
+        <TextBlock Grid.Row="5" 
+                   Text=""
+                   Foreground="#E74C3C" 
+                   FontSize="13"
+                   FontWeight="SemiBold"
+                   Margin="0,10"
+                   Visibility="{Binding IsAlreadyRegisteredForAnySlot, Converter={StaticResource BoolToVisible}}"/>
+
+        <!-- Кнопки действий -->
+        <StackPanel Grid.Row="7" Orientation="Horizontal" Margin="0,15,0,0">
+            <Button Content="← Назад к списку мероприятий"
+                    Command="{Binding BackCommand}"
+                    Background="#3498DB"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Padding="15,10"
+                    Margin="0,0,15,0"/>
+
+            <!-- Кнопка отмены записи (видна только если есть активная запись) -->
+            <Button Content="❌ Отменить запись"
+                    Command="{Binding CancelRegistrationCommand}"
+                    Background="#E74C3C"
+                    Foreground="White"
+                    BorderThickness="0"
+                    Cursor="Hand"
+                    Padding="15,10"
+                    Visibility="{Binding CanCancel, Converter={StaticResource BoolToVisible}}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

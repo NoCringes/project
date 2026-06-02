@@ -18,7 +18,6 @@ public class EventsController : ControllerBase
         _context = context;
     }
 
-    // GET: api/events
     [HttpGet]
     [AllowAnonymous]
     public async Task<IActionResult> GetAllEvents()
@@ -31,6 +30,9 @@ public class EventsController : ControllerBase
 
         foreach (var e in events)
         {
+            var coordinator = await _context.Users.FindAsync(e.CreatedBy);
+            var creatorName = coordinator != null ? $"{coordinator.FirstName} {coordinator.LastName}" : "Неизвестно";
+
             var slots = await _context.EventSlots
                 .Where(s => s.EventId == e.EventId)
                 .Select(s => new
@@ -53,6 +55,8 @@ public class EventsController : ControllerBase
                 e.EndDateTime,
                 e.MaxVolunteers,
                 e.Status,
+                e.CreatedBy,
+                CreatorName = creatorName,
                 Slots = slots
             });
         }
@@ -93,6 +97,7 @@ public class EventsController : ControllerBase
             eventItem.EndDateTime,
             eventItem.MaxVolunteers,
             eventItem.Status,
+            eventItem.CreatedBy,  // ← ДОБАВИТЬ ЭТУ СТРОКУ
             Slots = slots
         };
 

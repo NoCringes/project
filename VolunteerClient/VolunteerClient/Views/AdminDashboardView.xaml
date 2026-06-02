@@ -1,7 +1,7 @@
 ﻿<UserControl x:Class="VolunteerClient.Views.AdminDashboardView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             Background="White">
+             Background="#F0F4F8">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -12,16 +12,16 @@
         <!-- Верхняя панель -->
         <Border Grid.Row="0" Background="#2C3E50" Padding="10" CornerRadius="5">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button x:Name="RefreshButton" 
-                        Content="🔄 Обновить" 
+                <Button Content="🔄 Обновить" 
+                        Command="{Binding RefreshCommand}"
                         Margin="5" 
                         Padding="10,5" 
                         Background="#3498DB" 
                         Foreground="White"
                         BorderThickness="0"
                         Cursor="Hand"/>
-                <Button x:Name="LogoutButton" 
-                        Content="🚪 Выйти" 
+                <Button Content="🚪 Выйти" 
+                        Command="{Binding LogoutCommand}"
                         Margin="5" 
                         Padding="10,5" 
                         Background="#E74C3C" 
@@ -31,77 +31,88 @@
             </StackPanel>
         </Border>
 
-        <!-- Вкладки -->
-        <TabControl Grid.Row="1" Margin="10">
-            <!-- Вкладка 1: Пользователи -->
-            <TabItem Header="👥 Пользователи">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
+        <!-- Основное содержимое -->
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
 
-                    <!-- Карточки статистики -->
-                    <Grid Grid.Row="0" Margin="0,0,0,15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+            <!-- Карточки статистики -->
+            <Grid Grid.Row="0" Margin="0,0,0,15">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                        <Border Grid.Column="0" Background="#3498DB" CornerRadius="10" Padding="15" Margin="5">
-                            <StackPanel>
-                                <TextBlock Text="👥" FontSize="30"/>
-                                <TextBlock x:Name="TotalUsersText" Text="0" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                                <TextBlock Text="Всего пользователей" Foreground="White" Opacity="0.8"/>
-                            </StackPanel>
-                        </Border>
+                <Border Grid.Column="0" Background="#3498DB" CornerRadius="10" Padding="15" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="👥" FontSize="30"/>
+                        <TextBlock Text="{Binding TotalUsers}" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="Всего пользователей" Foreground="White" Opacity="0.8"/>
+                    </StackPanel>
+                </Border>
 
-                        <Border Grid.Column="1" Background="#27AE60" CornerRadius="10" Padding="15" Margin="5">
-                            <StackPanel>
-                                <TextBlock Text="🤝" FontSize="30"/>
-                                <TextBlock x:Name="TotalVolunteersText" Text="0" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                                <TextBlock Text="Волонтёров" Foreground="White" Opacity="0.8"/>
-                            </StackPanel>
-                        </Border>
+                <Border Grid.Column="1" Background="#27AE60" CornerRadius="10" Padding="15" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="🤝" FontSize="30"/>
+                        <TextBlock Text="{Binding TotalVolunteers}" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="Волонтёров" Foreground="White" Opacity="0.8"/>
+                    </StackPanel>
+                </Border>
 
-                        <Border Grid.Column="2" Background="#F39C12" CornerRadius="10" Padding="15" Margin="5">
-                            <StackPanel>
-                                <TextBlock Text="📋" FontSize="30"/>
-                                <TextBlock x:Name="TotalCoordinatorsText" Text="0" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                                <TextBlock Text="Координаторов" Foreground="White" Opacity="0.8"/>
-                            </StackPanel>
-                        </Border>
+                <Border Grid.Column="2" Background="#F39C12" CornerRadius="10" Padding="15" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="📋" FontSize="30"/>
+                        <TextBlock Text="{Binding TotalCoordinators}" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="Координаторов" Foreground="White" Opacity="0.8"/>
+                    </StackPanel>
+                </Border>
 
-                        <Border Grid.Column="3" Background="#9B59B6" CornerRadius="10" Padding="15" Margin="5">
-                            <StackPanel>
-                                <TextBlock Text="📅" FontSize="30"/>
-                                <TextBlock x:Name="TotalEventsText" Text="0" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                                <TextBlock Text="Мероприятий" Foreground="White" Opacity="0.8"/>
-                            </StackPanel>
-                        </Border>
-                    </Grid>
+                <Border Grid.Column="3" Background="#9B59B6" CornerRadius="10" Padding="15" Margin="5">
+                    <StackPanel>
+                        <TextBlock Text="📅" FontSize="30"/>
+                        <TextBlock Text="{Binding TotalEvents}" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                        <TextBlock Text="Мероприятий" Foreground="White" Opacity="0.8"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
 
-                    <!-- Список пользователей -->
-                    <Border Grid.Row="1" Background="White" CornerRadius="10" 
-                            BorderBrush="#BDC3C7" BorderThickness="1">
+            <!-- Вкладки -->
+            <TabControl Grid.Row="1">
+                <!-- Вкладка: Пользователи -->
+                <TabItem Header="👥 Пользователи">
+                    <Border Background="White" CornerRadius="10" 
+                            BorderBrush="#BDC3C7" BorderThickness="1"
+                            Margin="0,10,0,0">
                         <StackPanel>
-                            <TextBlock Text="👥 Управление пользователями" 
+                            <TextBlock Text="Управление пользователями" 
                                        FontSize="18" 
                                        FontWeight="Bold" 
                                        Padding="15" 
                                        Background="#2C3E50" 
                                        Foreground="White"/>
 
-                            <ListBox x:Name="UsersList" Height="350" Margin="10">
+                            <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}"
+                                     Margin="10" 
+                                     Padding="8" 
+                                     Tag="Поиск по email, имени, фамилии..."
+                                     BorderBrush="#BDC3C7"
+                                     BorderThickness="1"/>
+
+                            <ListBox ItemsSource="{Binding Users}" 
+                                     SelectedItem="{Binding SelectedUser}"
+                                     Height="350" 
+                                     Margin="10">
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
                                         <Border BorderBrush="#BDC3C7" BorderThickness="0,0,0,1" Padding="10" Margin="5">
                                             <Grid>
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*"/>
-                                                    <ColumnDefinition Width="150"/>
+                                                    <ColumnDefinition Width="100"/>
                                                     <ColumnDefinition Width="Auto"/>
                                                 </Grid.ColumnDefinitions>
 
@@ -115,12 +126,27 @@
                                                 </StackPanel>
 
                                                 <Border Grid.Column="1" 
-                                                        Background="{Binding RoleColor}" 
                                                         CornerRadius="5" 
                                                         Padding="5" 
                                                         Height="25"
                                                         HorizontalAlignment="Center"
                                                         VerticalAlignment="Center">
+                                                    <Border.Style>
+                                                        <Style TargetType="Border">
+                                                            <Setter Property="Background" Value="#95A5A6"/>
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Binding Role}" Value="admin">
+                                                                    <Setter Property="Background" Value="#E74C3C"/>
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding Role}" Value="coordinator">
+                                                                    <Setter Property="Background" Value="#F39C12"/>
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding Role}" Value="volunteer">
+                                                                    <Setter Property="Background" Value="#27AE60"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </Border.Style>
                                                     <TextBlock Text="{Binding Role}" 
                                                                Foreground="White" 
                                                                FontSize="12"
@@ -128,39 +154,36 @@
                                                 </Border>
 
                                                 <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center">
-                                                    <!-- Кнопка редактирования -->
-                                                    <Button x:Name="EditUserButton" 
-                                                            Content="✏️" 
+                                                    <Button Content="✏️" 
+                                                            Command="{Binding DataContext.EditUserCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                            CommandParameter="{Binding}"
                                                             Margin="3" 
                                                             Padding="8,5" 
                                                             Background="#3498DB" 
                                                             Foreground="White"
                                                             BorderThickness="0"
                                                             Cursor="Hand"
-                                                            Tag="{Binding}"
-                                                            ToolTip="Редактировать пользователя"/>
-                                                    <!-- Кнопка смены роли -->
-                                                    <Button x:Name="ChangeRoleButton" 
-                                                            Content="🔄" 
+                                                            ToolTip="Редактировать"/>
+                                                    <Button Content="🔄" 
+                                                            Command="{Binding DataContext.ChangeRoleCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                            CommandParameter="{Binding}"
                                                             Margin="3" 
                                                             Padding="8,5" 
                                                             Background="#F39C12" 
                                                             Foreground="White"
                                                             BorderThickness="0"
                                                             Cursor="Hand"
-                                                            Tag="{Binding}"
                                                             ToolTip="Сменить роль"/>
-                                                    <!-- Кнопка удаления -->
-                                                    <Button x:Name="DeleteUserButton" 
-                                                            Content="🗑️" 
+                                                    <Button Content="🗑️" 
+                                                            Command="{Binding DataContext.DeleteUserCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                            CommandParameter="{Binding}"
                                                             Margin="3" 
                                                             Padding="8,5" 
                                                             Background="#E74C3C" 
                                                             Foreground="White"
                                                             BorderThickness="0"
                                                             Cursor="Hand"
-                                                            Tag="{Binding}"
-                                                            ToolTip="Удалить пользователя"/>
+                                                            ToolTip="Удалить"/>
                                                 </StackPanel>
                                             </Grid>
                                         </Border>
@@ -169,43 +192,25 @@
                             </ListBox>
                         </StackPanel>
                     </Border>
-                </Grid>
-            </TabItem>
+                </TabItem>
 
-            <!-- Вкладка 2: Мероприятия -->
-            <TabItem Header="📅 Мероприятия">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-
-                    <!-- Кнопка создания мероприятия -->
-                    <Border Grid.Row="0" Background="#ECF0F1" Padding="10" CornerRadius="5" Margin="0,0,0,10">
-                        <Button x:Name="CreateEventButton" 
-                                Content="➕ Создать мероприятие" 
-                                HorizontalAlignment="Left"
-                                Padding="15,10" 
-                                Background="#27AE60" 
-                                Foreground="White"
-                                FontSize="14"
-                                FontWeight="Bold"
-                                BorderThickness="0"
-                                Cursor="Hand"/>
-                    </Border>
-
-                    <!-- Список мероприятий -->
-                    <Border Grid.Row="1" Background="White" CornerRadius="10" 
-                            BorderBrush="#BDC3C7" BorderThickness="1">
+                <!-- Вкладка: Мероприятия -->
+                <TabItem Header="📅 Мероприятия">
+                    <Border Background="White" CornerRadius="10" 
+                            BorderBrush="#BDC3C7" BorderThickness="1"
+                            Margin="0,10,0,0">
                         <StackPanel>
-                            <TextBlock Text="📋 Все мероприятия" 
+                            <TextBlock Text="Управление мероприятиями" 
                                        FontSize="18" 
                                        FontWeight="Bold" 
                                        Padding="15" 
                                        Background="#2C3E50" 
                                        Foreground="White"/>
 
-                            <ListBox x:Name="EventsList" Height="450" Margin="10">
+                            <ListBox ItemsSource="{Binding AllEvents}" 
+                                     SelectedItem="{Binding SelectedEvent}"
+                                     Height="450" 
+                                     Margin="10">
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
                                         <Border BorderBrush="#BDC3C7" BorderThickness="0,0,0,1" Padding="10" Margin="5">
@@ -218,38 +223,41 @@
                                                 <StackPanel>
                                                     <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="14"/>
                                                     <TextBlock Text="{Binding Location}" Foreground="Gray" FontSize="12"/>
-                                                    <TextBlock Text="{Binding Date}" Foreground="Gray" FontSize="12"/>
-                                                    <TextBlock Text="{Binding Coordinator}" Foreground="Gray" FontSize="12"/>
+                                                    <TextBlock Text="{Binding StartDateTime, StringFormat='dd.MM.yyyy HH:mm'}" Foreground="Gray" FontSize="12"/>
+                                                    <TextBlock Foreground="Gray" FontSize="12">
+                                                        <Run Text="Создатель: "/>
+                                                        <Run Text="{Binding CreatorName}"/>
+                                                    </TextBlock>
                                                 </StackPanel>
 
                                                 <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
-                                                    <Button x:Name="EditEventButton" 
-                                                            Content="✏️ Редактировать" 
-                                                            Margin="5" 
-                                                            Padding="8,5" 
-                                                            Background="#F39C12" 
-                                                            Foreground="White"
-                                                            BorderThickness="0"
-                                                            Cursor="Hand"
-                                                            Tag="{Binding}"/>
-                                                    <Button x:Name="DeleteEventButton" 
-                                                            Content="🗑️ Удалить" 
-                                                            Margin="5" 
-                                                            Padding="8,5" 
-                                                            Background="#E74C3C" 
-                                                            Foreground="White"
-                                                            BorderThickness="0"
-                                                            Cursor="Hand"
-                                                            Tag="{Binding}"/>
-                                                    <Button x:Name="ViewVolunteersButton" 
-                                                            Content="👥 Волонтёры" 
+                                                    <Button Content="👥 Волонтёры" 
+                                                            Command="{Binding DataContext.ViewVolunteersCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                            CommandParameter="{Binding}"
                                                             Margin="5" 
                                                             Padding="8,5" 
                                                             Background="#3498DB" 
                                                             Foreground="White"
                                                             BorderThickness="0"
-                                                            Cursor="Hand"
-                                                            Tag="{Binding}"/>
+                                                            Cursor="Hand"/>
+                                                    <Button Content="✏️ Редактировать" 
+                                                            Command="{Binding DataContext.EditEventCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                            CommandParameter="{Binding}"
+                                                            Margin="5" 
+                                                            Padding="8,5" 
+                                                            Background="#F39C12" 
+                                                            Foreground="White"
+                                                            BorderThickness="0"
+                                                            Cursor="Hand"/>
+                                                    <Button Content="🗑️ Удалить" 
+                                                            Command="{Binding DataContext.DeleteEventCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                                            CommandParameter="{Binding}"
+                                                            Margin="5" 
+                                                            Padding="8,5" 
+                                                            Background="#E74C3C" 
+                                                            Foreground="White"
+                                                            BorderThickness="0"
+                                                            Cursor="Hand"/>
                                                 </StackPanel>
                                             </Grid>
                                         </Border>
@@ -258,8 +266,8 @@
                             </ListBox>
                         </StackPanel>
                     </Border>
-                </Grid>
-            </TabItem>
-        </TabControl>
+                </TabItem>
+            </TabControl>
+        </Grid>
     </Grid>
 </UserControl>

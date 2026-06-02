@@ -1,9 +1,15 @@
 ﻿<Application x:Class="VolunteerClient.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:VolunteerClient"
-             StartupUri="MainWindow.xaml">
+             xmlns:helpers="clr-namespace:VolunteerClient.Helpers">
     <Application.Resources>
-         
+        <helpers:StringToVisibilityConverter x:Key="StringToVisibility"/>
+        <helpers:StatusToVisibilityConverter x:Key="StatusToVisibility"/>
+        <helpers:StatusToAttendanceVisibilityConverter x:Key="StatusToAttendanceVisibility"/>
+        <helpers:IntToBoolConverter x:Key="IntToBool"/>
+        <helpers:FreeSlotsToColorConverter x:Key="FreeSlotsToColor"/>
+        <helpers:IntToVisibilityConverter x:Key="IntToVisibility"/>
+        <helpers:BoolToCollapsedConverter x:Key="BoolToCollapsed"/>
+        <helpers:BoolToVisibleConverter x:Key="BoolToVisible"/>
     </Application.Resources>
 </Application>

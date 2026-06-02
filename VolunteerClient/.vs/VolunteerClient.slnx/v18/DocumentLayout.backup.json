@@ -3,44 +3,84 @@
   "WorkspaceRootPath": "D:\\code\\lab_piris\\VolunteerClient\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\volunteerslistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\volunteerslistview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\viewmodels\\volunteerslistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\viewmodels\\volunteerslistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\viewmodels\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\viewmodels\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\admindashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\viewmodels\\editeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\viewmodels\\editeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\models\\apimodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\models\\apimodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\admindashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\admindashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\edituserdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\edituserdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\viewmodels\\eventdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\viewmodels\\eventdetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\edituserdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\edituserdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\viewmodels\\createeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\viewmodels\\createeventviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\viewmodels\\coordinatordashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\viewmodels\\coordinatordashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\volunteerslistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\volunteerslistview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\editeventview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\editeventview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\editeventview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\editeventview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\coordinatordashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\coordinatordashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\volunteerdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\volunteerdashboardview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\createeventview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\createeventview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\registerview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\eventdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\eventdetailsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\registerview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\views\\coordinatordashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\views\\coordinatordashboardview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|d:\\code\\lab_piris\\volunteerclient\\volunteerclient\\viewmodels\\volunteerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D860499-C1DE-5E74-20B8-286335483EEB}|VolunteerClient\\VolunteerClient.csproj|solutionrelative:volunteerclient\\viewmodels\\volunteerdashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,127 +118,256 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditUserDialog.xaml",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditUserDialog.xaml",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\EditUserDialog.xaml",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditUserDialog.xaml",
-              "RelativeToolTip": "VolunteerClient\\Views\\EditUserDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-31T23:27:27.7Z",
+              "DocumentIndex": 3,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\ViewModels\\AdminDashboardViewModel.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "VolunteerClient\\ViewModels\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAmwCcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T01:46:39.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginView.xaml.cs",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\LoginView.xaml.cs",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\LoginView.xaml.cs",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\LoginView.xaml.cs",
-              "RelativeToolTip": "VolunteerClient\\Views\\LoginView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "EditEventViewModel.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\EditEventViewModel.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\ViewModels\\EditEventViewModel.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\EditEventViewModel.cs",
+              "RelativeToolTip": "VolunteerClient\\ViewModels\\EditEventViewModel.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAmwAkBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T23:12:46.464Z",
+              "WhenOpened": "2026-06-02T01:10:41.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VolunteersListViewModel.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\VolunteersListViewModel.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\ViewModels\\VolunteersListViewModel.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\VolunteersListViewModel.cs",
+              "RelativeToolTip": "VolunteerClient\\ViewModels\\VolunteersListViewModel.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAQwHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T01:24:07.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Services\\NavigationService.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\Services\\NavigationService.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Services\\NavigationService.cs",
+              "RelativeToolTip": "VolunteerClient\\Services\\NavigationService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAmwDwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T02:01:59.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiModels.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Models\\ApiModels.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\Models\\ApiModels.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Models\\ApiModels.cs",
+              "RelativeToolTip": "VolunteerClient\\Models\\ApiModels.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T23:47:03.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "VolunteersListView.xaml",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\VolunteersListView.xaml",
+              "RelativeDocumentMoniker": "VolunteerClient\\Views\\VolunteersListView.xaml",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\VolunteersListView.xaml*",
+              "RelativeToolTip": "VolunteerClient\\Views\\VolunteersListView.xaml*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-02T01:24:35.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AdminDashboardView.xaml",
               "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\AdminDashboardView.xaml",
               "RelativeDocumentMoniker": "VolunteerClient\\Views\\AdminDashboardView.xaml",
               "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\AdminDashboardView.xaml",
               "RelativeToolTip": "VolunteerClient\\Views\\AdminDashboardView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-31T23:30:37.574Z",
+              "WhenOpened": "2026-06-02T01:51:22.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminDashboardView.xaml.cs",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
-              "RelativeToolTip": "VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
-              "ViewState": "AgIAACgBAAAAAAAAAAAAwD8BAAA3AAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "CoordinatorDashboardViewModel.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\CoordinatorDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\ViewModels\\CoordinatorDashboardViewModel.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\CoordinatorDashboardViewModel.cs",
+              "RelativeToolTip": "VolunteerClient\\ViewModels\\CoordinatorDashboardViewModel.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAHkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T21:17:50.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditUserDialog.xaml.cs",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditUserDialog.xaml.cs",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\EditUserDialog.xaml.cs",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditUserDialog.xaml.cs",
-              "RelativeToolTip": "VolunteerClient\\Views\\EditUserDialog.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T23:29:25.367Z",
+              "WhenOpened": "2026-06-02T01:13:16.844Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "RegisterView.xaml",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\RegisterView.xaml",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\RegisterView.xaml",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\RegisterView.xaml",
-              "RelativeToolTip": "VolunteerClient\\Views\\RegisterView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-31T23:04:20.455Z",
+              "Title": "AdminDashboardView.xaml.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
+              "RelativeToolTip": "VolunteerClient\\Views\\AdminDashboardView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T01:51:19.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VolunteerDashboardView.xaml",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\VolunteerDashboardView.xaml",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\VolunteerDashboardView.xaml",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\VolunteerDashboardView.xaml",
-              "RelativeToolTip": "VolunteerClient\\Views\\VolunteerDashboardView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-31T23:14:02.021Z",
+              "DocumentIndex": 10,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\Services\\ApiClient.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Services\\ApiClient.cs",
+              "RelativeToolTip": "VolunteerClient\\Services\\ApiClient.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAswKEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T01:26:39.415Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
+              "Title": "CreateEventViewModel.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\CreateEventViewModel.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\ViewModels\\CreateEventViewModel.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\CreateEventViewModel.cs",
+              "RelativeToolTip": "VolunteerClient\\ViewModels\\CreateEventViewModel.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAowM8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T00:53:25.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EventDetailsViewModel.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\EventDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\ViewModels\\EventDetailsViewModel.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\EventDetailsViewModel.cs",
+              "RelativeToolTip": "VolunteerClient\\ViewModels\\EventDetailsViewModel.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswC8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T23:56:04.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\App.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\App.xaml.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\App.xaml.cs",
+              "RelativeToolTip": "VolunteerClient\\App.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T01:13:57.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VolunteersListView.xaml.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\VolunteersListView.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\Views\\VolunteersListView.xaml.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\VolunteersListView.xaml.cs",
+              "RelativeToolTip": "VolunteerClient\\Views\\VolunteersListView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T01:24:54.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EditEventView.xaml.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditEventView.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\Views\\EditEventView.xaml.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditEventView.xaml.cs",
+              "RelativeToolTip": "VolunteerClient\\Views\\EditEventView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T01:11:44.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditEventView.xaml",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditEventView.xaml",
+              "RelativeDocumentMoniker": "VolunteerClient\\Views\\EditEventView.xaml",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EditEventView.xaml",
+              "RelativeToolTip": "VolunteerClient\\Views\\EditEventView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-02T01:11:06.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "CoordinatorDashboardView.xaml",
               "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\CoordinatorDashboardView.xaml",
               "RelativeDocumentMoniker": "VolunteerClient\\Views\\CoordinatorDashboardView.xaml",
               "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\CoordinatorDashboardView.xaml",
               "RelativeToolTip": "VolunteerClient\\Views\\CoordinatorDashboardView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-05-31T21:11:45.344Z",
+              "WhenOpened": "2026-06-02T01:07:12.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RegisterView.xaml.cs",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\RegisterView.xaml.cs",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\RegisterView.xaml.cs",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\RegisterView.xaml.cs",
-              "RelativeToolTip": "VolunteerClient\\Views\\RegisterView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T23:05:31.497Z",
+              "DocumentIndex": 17,
+              "Title": "CreateEventView.xaml",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\CreateEventView.xaml",
+              "RelativeDocumentMoniker": "VolunteerClient\\Views\\CreateEventView.xaml",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\CreateEventView.xaml",
+              "RelativeToolTip": "VolunteerClient\\Views\\CreateEventView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-02T00:12:44.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CoordinatorDashboardView.xaml.cs",
-              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\CoordinatorDashboardView.xaml.cs",
-              "RelativeDocumentMoniker": "VolunteerClient\\Views\\CoordinatorDashboardView.xaml.cs",
-              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\CoordinatorDashboardView.xaml.cs",
-              "RelativeToolTip": "VolunteerClient\\Views\\CoordinatorDashboardView.xaml.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAIwE0AAAAYAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "EventDetailsView.xaml",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EventDetailsView.xaml",
+              "RelativeDocumentMoniker": "VolunteerClient\\Views\\EventDetailsView.xaml",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\Views\\EventDetailsView.xaml",
+              "RelativeToolTip": "VolunteerClient\\Views\\EventDetailsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-02T00:02:30.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "VolunteerDashboardViewModel.cs",
+              "DocumentMoniker": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\VolunteerDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "VolunteerClient\\ViewModels\\VolunteerDashboardViewModel.cs",
+              "ToolTip": "D:\\code\\lab_piris\\VolunteerClient\\VolunteerClient\\ViewModels\\VolunteerDashboardViewModel.cs",
+              "RelativeToolTip": "VolunteerClient\\ViewModels\\VolunteerDashboardViewModel.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAUwJcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-31T21:12:31.47Z",
+              "WhenOpened": "2026-06-01T23:44:41.641Z",
               "EditorCaption": ""
             }
           ]
